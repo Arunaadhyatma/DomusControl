@@ -68,7 +68,6 @@ public class UsuarioDAO {
                 Connection conn = ConnectionFactory.getConnection();
                 PreparedStatement stmt = conn.prepareStatement(sql)
         ) {
-            System.out.println("Conectado em: " + conn.getCatalog());
 
             stmt.setString(1, email);
             stmt.setString(2, senha);
@@ -76,7 +75,6 @@ public class UsuarioDAO {
             try (ResultSet rs = stmt.executeQuery()) {
                 boolean encontrou = rs.next();
 
-                System.out.println("Usuário encontrado? " + encontrou);
 
                 return encontrou;
             }

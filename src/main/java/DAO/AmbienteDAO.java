@@ -22,7 +22,6 @@ public class AmbienteDAO {
             stmt.setString(1, ambiente.getNome());
             stmt.executeUpdate();
 
-            System.out.println("Ambiente salvo!");
 
         } catch (Exception e) {
             e.printStackTrace();
