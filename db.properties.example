@@ -1,0 +1,5 @@
+# Copie este arquivo para "db.properties" (na raiz do projeto) e preencha.
+# O arquivo db.properties é ignorado pelo Git e não deve ser enviado ao GitHub.
+db.url=jdbc:mysql://localhost:3306/domuscontroldb
+db.user=root
+db.password=utgc5466
